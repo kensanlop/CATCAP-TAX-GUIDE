@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Catfish Capitalism: Guía PayPal/Binance + Declaración</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body { 
+  font-family: Arial, Helvetica, sans-serif; 
+  line-height: 1.55; 
+  color:#0f172a; 
+  max-width: 1024px; 
+  margin: 28px auto; 
+  padding: 0 16px; 
+  background:#f1f5f9;
+}
+h1 { 
+  font-size: 30px; 
+  font-weight: bold; 
+  color:#1e40af; 
+  border-bottom: 3px solid #1e40af; 
+  padding-bottom: 6px; 
+}
+h2 { 
+  font-size: 22px; 
+  border-bottom: 2px solid #e5e7eb; 
+  padding-bottom: 6px; 
+}
+h3 { font-size: 18px; }
+.note, .box, .country { 
+  background:#f8fafc; 
+  border:1px solid #e5e7eb; 
+  border-radius:8px; 
+  padding:12px 14px; 
+  margin-bottom:12px; 
+}
+ul { margin-top: 8px; }
+li { margin: 6px 0; }
+code { 
+  background:#f8fafc; 
+  padding: 1px 4px; 
+  border:1px solid #e5e7eb; 
+  border-radius:4px; 
+}
+a { color:#0369a1; text-decoration: none; }
+a:hover { text-decoration: underline; }
+button.toggle { 
+  background:#0ea5e9; 
+  color:white; 
+  border:none; 
+  border-radius:4px; 
+  padding:6px 10px; 
+  cursor:pointer; 
+  margin-bottom:6px; 
+  width:100%;
+  text-align:left;
+}
+.collapse-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+  padding-left: 8px;
+}
+.collapse-content.show {
+  max-height: 2000px; 
+  transition: max-height 0.6s ease-in, padding 0.4s ease-in;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+table { width:100%; border-collapse: collapse; margin-top:8px; }
+th, td { border:1px solid #ccc; padding:6px 8px; text-align:left; }
+</style>
+<script>
+function toggleContent(id) {
+  const allContents = document.querySelectorAll('.collapse-content');
+  allContents.forEach(el => {
+    if(el.id !== id) el.classList.remove('show');
+  });
+  const el = document.getElementById(id);
+  el.classList.toggle('show');
+}
+</script>
+</head>
+<body>
+
+<h1>Catfish Capitalism: Guía práctica PayPal/Binance + Declaración</h1>
+
+<div class="note">
+  <strong>Regla de oro</strong>: Cada cobro ⇒ <em>comprobante</em> + <em>registro</em> + <em>respaldo</em>
+</div>
+
+<h2>Pasos universales</h2>
+<ol>
+  <li>Regístrense en su autoridad fiscal.</li>
+  <li>Activen facturación electrónica.</li>
+  <li>Emitan comprobante por cada venta.</li>
+  <li>Registren PayPal y Binance (precio, TXID, ganancias/pérdidas).</li>
+  <li>Reserven 25–30% de utilidad para impuestos.</li>
+</ol>
+
+<h2>Auto-reply para clientes</h2>
+<div class="box">
+<p><strong>Mensaje sugerido:</strong><br>
+“¡Gracias por tu pedido! Para procesarlo hoy, te envío <strong>link de pago</strong> (PayPal) o <strong>dirección</strong> (Binance USDT). Tras el pago recibirás confirmación y recibo. Si necesitas factura/boleta, dímelo y te la emito al momento.”</p>
+</div>
+
+<h2>Checklist semanal</h2>
+<div class="box">
+<table>
+<tr><th>Día</th><th>Tareas</th></tr>
+<tr><td>Miércoles</td><td>Registrar cobros PayPal/Binance y guardar PDFs/CSV/TXIDs</td></tr>
+<tr><td>Viernes</td><td>Emitir comprobantes faltantes y conciliar Excel</td></tr>
+<tr><td>Domingo</td><td>Apartar 25–30% para impuestos y actualizar P&L</td></tr>
+<tr><td>Cierre de mes</td><td>Revisar cada ingreso y preparar declaración</td></tr>
+</table>
+</div>
+
+<h2>Países</h2>
+
+<!-- España -->
+<button class="toggle" onclick="toggleContent('espana')">España</button>
+<div id="espana" class="collapse-content">
+<div class="country">
+<ul>
+<li><strong>AEAT Alta Autónomos (036/037):</strong> <a href="https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G322.shtml">Modelo 036</a> · <a href="https://sede.agenciatributaria.gob.es/Sede/censos-nif-domicilio-fiscal/censos/modelos-036-037_____icacion-baja-declaracion-simplificada_/modelo-036.html">Guía 036</a></li>
+<li><strong>Seguridad Social:</strong> <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas%2C%2Bbajas%2By%2Bmodificaciones/Altas%2By%2Bafiliacion%2Bde%2Btrabajadores/Alta_trabajo_autonomo">Import@ss Alta autónomo</a></li>
+<li><strong>Modelos:</strong> <a href="https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G601.shtml">130 IRPF</a> · <a href="https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G414.shtml">303 IVA</a> · <a href="https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G412.shtml">390 IVA anual</a></li>
+<li><strong>Cripto:</strong> <a href="https://sede.agenciatributaria.gob.es/Sede/procedimientoini/GI55.shtml">Modelo 721</a></li>
+</ul>
+</div>
+</div>
+
+<!-- Chile -->
+<button class="toggle" onclick="toggleContent('chile')">Chile</button>
+<div id="chile" class="collapse-content">
+<div class="country">
+<ul>
+<li><strong>SII Boleta Honorarios Electrónica:</strong> <a href="https://www.sii.cl/servicios_online/1040-.html">Portal Boletas</a> · <a href="https://www.sii.cl/preguntas_frecuentes/boleta_honorario_electr/001_120_3748.htm">Boleta a extranjeros y PPM</a></li>
+</ul>
+</div>
+</div>
+
+<!-- México -->
+<button class="toggle" onclick="toggleContent('mexico')">México</button>
+<div id="mexico" class="collapse-content">
+<div class="country">
+<ul>
+<li><strong>SAT RFC:</strong> <a href="https://www.sat.gob.mx/portal/public/tramites/inscripcion-y-aviso-al-rfc">Inscripción RFC</a></li>
+<li><strong>CFDI 4.0 / Facturador gratuito:</strong> <a href="https://www.sat.gob.mx/portal/public/tramites/factura-electronica">Factura electrónica</a> · <a href="https://wwwmat.sat.gob.mx/aplicacion/75169/servicio-de-facturacion-cfdi-version-4.0-%28vigente-a-partir-del-1-de-enero-de-2022%29">Facturador gratuito</a></li>
+</ul>
+</div>
+</div>
+
+<!-- Argentina -->
+<button class="toggle" onclick="toggleContent('argentina')">Argentina</button>
+<div id="argentina" class="collapse-content">
+<div class="country">
+<ul>
+<li><strong>AFIP:</strong> <a href="https://www.afip.gob.ar/monotributo/">Monotributo</a> · <a href="https://www.afip.gob.ar/fe/">Factura electrónica</a> · <a href="https://www.afip.gob.ar/economia-digital/criptoactivos/impuesto-a-las-ganancias.asp">Cripto en Ganancias</a></li>
+</ul>
+</div>
+</div>
+
+<!-- Colombia -->
+<button class="toggle" onclick="toggleContent('colombia')">Colombia</button>
+<div id="colombia" class="collapse-content">
+<div class="country">
+<ul>
+<li><strong>DIAN RUT:</strong> <a href="https://muisca.dian.gov.co/WebRutVirtualInscripcion/">RUT Virtual</a></li>
+<li><strong>Facturación electrónica:</strong> <a href="https://www.dian.gov.co/impuestos/factura-electronica/como-hacerlo/Paginas/ser-facturador-electronico.aspx">Ser facturador</a> · <a href="https://micrositios.dian.gov.co/sistema-de-facturacion-electronica/guia-de-facturacion-gratuita-dian/">Facturador gratuito</a></li>
+</ul>
+</div>
+</div>
+
+<!-- Perú -->
+<button class="toggle" onclick="toggleContent('peru')">Perú</button>
+<div id="peru" class="collapse-content">
+<div class="country">
+<ul>
+<li><strong>SUNAT RUC:</strong> <a href="https://www.gob.pe/284-inscripcion-en-el-ruc">Inscripción RUC</a></li>
+<li><strong>SEE–SOL CPE:</strong> <a href="https://cpe.sunat.gob.pe/informacion_general/cpe">Comprobantes electrónicos</a> · <a href="https://www.gob.pe/7309-sistema-de-emision-electronica-sol-emitir-factura-en-el-see-sol">Emitir factura en SEE–SOL</a></li>
+</ul>
+</div>
+</div>
+
+<!-- Ecuador -->
+<button class="toggle" onclick="toggleContent('ecuador')">Ecuador</button>
+<div id="ecuador" class="collapse-content">
+<div class="country">
+<ul>
+<li><strong>SRI:</strong> <a href="https://www.gob.ec/sri/tramites/inscripcion-registro-unico-contribuyente-ruc-persona-natural-ecuatoriana-extranjera-residente">Inscripción RUC</a> · <a href="https://www.sri.gob.ec/web/guest/factura-electronica">Facturación electrónica</a> · <a href="https://www.sri.gob.ec/web/guest/facturador-sri">Facturador SRI</a></li>
+</ul>
+</div>
+</div>
+
+<!-- Uruguay -->
+<button class="toggle" onclick="toggleContent('uruguay')">Uruguay</button>
+<div id="uruguay" class="collapse-content">
+<div class="country">
+<ul>
+<li><strong>DGI e-Factura (CFE):</strong> <a href="https://www.dgi.gub.uy/wdgi/page?1,dao=detDoc&doc=portal_gestiones">Portal e-Factura</a> · <a href="https://www.dgi.gub.uy/wdgi/page?1,dao=detDoc&doc=portal_gestion_ingreso_eFactura">Guía ingreso e-Factura</a></li>
+</ul>
+</div>
+</div>
+
+<!-- Paraguay -->
+<button class="toggle" onclick="toggleContent('paraguay')">Paraguay</button>
+<div id="paraguay" class="collapse-content">
+<div class="country">
+<ul>
+<li><strong>DNIT RUC:</strong> <a href="https://www.dgi.gov.py/webdgiruc/">Inscripción al RUC</a></li>
+<li><strong>SIFEN / e-Kuatia’i:</strong> <a href="https://www.sifen.gov.py/consultas">Factura electrónica</a> · <a href="https://www.sifen.gov.py/consultas">e-Kuatia’i</a></li>
+</ul>
+</div>
+</div>
+
+<!-- Bolivia -->
+<button class="toggle" onclick="toggleContent('bolivia')">Bolivia</button>
+<div id="bolivia" class="collapse-content">
+<div class="country">
+<ul>
+<li><strong>SIN:</strong> <a href="https://www.impuestos.gob.bo/portal/page/portal/SIN_Portal/">Portal SIN</a> · <a href="https://siat.impuestos.gob.bo/">Factura electrónica (SIAT)</a></li>
+</ul>
+</div>
+</div>
+
+<!-- Costa Rica -->
+<button class="toggle" onclick="toggleContent('costarica')">Costa Rica</button>
+<div id="costarica" class="collapse-content">
+<div class="country">
+<ul>
+<li><strong>ATV:</strong> <a href="https://atv.hacienda.go.cr/atv/login/aviso">Portal ATV</a> · <a href="https://www.hacienda.go.cr/docs/57403f20a0b0d_FacturadorGratuito.pdf">Guía Facturador Gratuito</a></li>
+</ul>
+</div>
+</div>
+
+<!-- Panamá -->
+<button class="toggle" onclick="toggleContent('panama')">Panamá</button>
+<div id="panama" class="collapse-content">
+<div class="country">
+<ul>
+<li><strong>DGI:</strong> <a href="https://dgi.mef.gob.pa/portal/">e-Tax 2.0</a> · <a href="https://dgi.mef.gob.pa/portal/facturador-electronico/">Facturador electrónico gratuito</a></li>
+</ul>
+</div>
+</div>
+
+<!-- República Dominicana -->
+<button class="toggle" onclick="toggleContent('rd')">República Dominicana</button>
+<div id="rd" class="collapse-content">
+<div class="country">
+<ul>
+<li><strong>DGII:</strong> <a href="https://www.dgii.gov.do/servicios/Pages/RNC.aspx">Registro RNC</a> · <a href="https://www.dgii.gov.do/servicios/Pages/e-CF.aspx">e-CF</a></li>
+</ul>
+</div>
+</div>
+
+<!-- Guatemala -->
+<button class="toggle" onclick="toggleContent('guatemala')">Guatemala</button>
+<div id="guatemala" class="collapse-content">
+<div class="country">
+<ul>
+<li><strong>SAT:</strong> <a href="https://portal.sat.gob.gt/portal/">NIT (RTU Digital)</a> · <a href="https://portal.sat.gob.gt/portal/fel">FEL – Factura Electrónica en Línea</a></li>
+</ul>
+</div>
+</div>
+
+<!-- Honduras -->
+<button class="toggle" onclick="toggleContent('honduras')">Honduras</button>
+<div id="honduras" class="collapse-content">
+<div class="country">
+<ul>
+<li><strong>SAR:</strong> <a href="https://portal.sar.gob.hn/">Portal SAR</a> · <a href="https://portal.sar.gob.hn/factura/">Factura electrónica</a></li>
+</ul>
+</div>
+</div>
+
+<!-- Nicaragua -->
+<button class="toggle" onclick="toggleContent('nicaragua')">Nicaragua</button>
+<div id="nicaragua" class="collapse-content">
+<div class="country">
+<ul>
+<li><strong>DGI:</strong> <a href="https://dgi.gob.ni/">Portal DGI</a> · <a href="https://dgi.gob.ni/facturacion-electronica">Factura electrónica</a></li>
+</ul>
+</div>
+</div>
+
+<h2>Buenas prácticas con PayPal y Binance</h2>
+<div class="crypto">
+<ul>
+<li><strong>PayPal:</strong> exporten reportes mensuales (abonos, comisiones, retiros) y guarden evidencias de holds.</li>
+<li><strong>Binance:</strong> registren el precio de mercado al recibir (ingreso) y al vender/convertir calculen ganancia/pérdida; conserven TXIDs.</li>
+<li><strong>Conciliación mensual:</strong> su plantilla Excel debe cuadrar con lo facturado y declarado.</li>
+<li><strong>Descargo:</strong> Esta guía usa exclusivamente enlaces oficiales y no reemplaza asesoría profesional. Revisen siempre el portal de su autoridad fiscal por cambios de última hora.</li>
+</ul>
+</div>
+
+</body>
+</html>
